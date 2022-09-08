@@ -1,5 +1,3 @@
-import pyodbc 
-
 #with open("arquivo.txt") as file:
 #    for line in file:
 #        print line
@@ -36,7 +34,10 @@ def latencia_log(index_lat_inicio, index_lat_fim): #Retorna o endereço pingado 
     if inicio_latencia > 0:
              return (line[latencia_inicio:latencia_fim])
 
+def mysql_connection():
 
+    cnxn = pyodbc.connect("DRIVER={ODBC Driver 18 for SQL Server};SERVER=localhost;DATABASE=pinglog;UID=dugeon;PASSWORD=Aztx2390;")
+    cursor = cnxn.cursor()
 
 with open("ping.log") as file: #Abre o arquivo
     
