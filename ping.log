@@ -1,0 +1,68 @@
+2022-07-01 14:26:04: PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+2022-07-01 14:26:04: 64 bytes from 8.8.8.8: icmp_seq=1 ttl=58 time=41.6 ms
+2022-07-01 14:26:05: 64 bytes from 8.8.8.8: icmp_seq=2 ttl=58 time=41.9 ms
+2022-07-01 14:26:06: 64 bytes from 8.8.8.8: icmp_seq=3 ttl=58 time=41.5 ms
+2022-07-01 14:26:07: 64 bytes from 8.8.8.8: icmp_seq=4 ttl=58 time=41.5 ms
+2022-07-01 14:26:07: 
+2022-07-01 14:26:07: --- 8.8.8.8 ping statistics ---
+2022-07-01 14:26:07: 4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+2022-07-01 14:26:07: rtt min/avg/max/mdev = 41.462/41.604/41.854/0.150 ms
+2022-07-01 14:26:13: PING src.g03.yahoodns.net (74.6.136.150) 56(84) bytes of data.
+2022-07-01 14:26:13: 64 bytes from w2.src.vip.bf1.yahoo.com (74.6.136.150): icmp_seq=1 ttl=50 time=123 ms
+2022-07-01 14:26:14: 64 bytes from w2.src.vip.bf1.yahoo.com (74.6.136.150): icmp_seq=2 ttl=50 time=122 ms
+2022-07-01 14:26:15: 64 bytes from w2.src.vip.bf1.yahoo.com (74.6.136.150): icmp_seq=3 ttl=50 time=122 ms
+2022-07-01 14:26:16: 64 bytes from w2.src.vip.bf1.yahoo.com (74.6.136.150): icmp_seq=4 ttl=50 time=122 ms
+2022-07-01 14:26:16: 
+2022-07-01 14:26:16: --- src.g03.yahoodns.net ping statistics ---
+2022-07-01 14:26:16: 4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+2022-07-01 14:26:16: rtt min/avg/max/mdev = 121.981/122.330/122.878/0.337 ms
+2022-07-01 14:26:21: PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+2022-07-01 14:26:21: 64 bytes from 8.8.8.8: icmp_seq=1 ttl=58 time=41.8 ms
+2022-07-01 14:26:22: 64 bytes from 8.8.8.8: icmp_seq=2 ttl=58 time=41.3 ms
+2022-07-01 14:26:23: 64 bytes from 8.8.8.8: icmp_seq=3 ttl=58 time=41.6 ms
+2022-07-01 14:26:24: 64 bytes from 8.8.8.8: icmp_seq=4 ttl=58 time=41.6 ms
+2022-07-01 14:26:24: 
+2022-07-01 14:26:24: --- 8.8.8.8 ping statistics ---
+2022-07-01 14:26:24: 4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+2022-07-01 14:26:24: rtt min/avg/max/mdev = 41.348/41.560/41.758/0.145 ms
+2022-07-01 14:26:29: PING src.g03.yahoodns.net (74.6.136.150) 56(84) bytes of data.
+2022-07-01 14:26:29: 64 bytes from w2.src.vip.bf1.yahoo.com (74.6.136.150): icmp_seq=1 ttl=50 time=122 ms
+2022-07-01 14:26:30: 64 bytes from w2.src.vip.bf1.yahoo.com (74.6.136.150): icmp_seq=2 ttl=50 time=122 ms
+2022-07-01 14:26:31: 64 bytes from w2.src.vip.bf1.yahoo.com (74.6.136.150): icmp_seq=3 ttl=50 time=122 ms
+2022-07-01 14:26:32: 64 bytes from w2.src.vip.bf1.yahoo.com (74.6.136.150): icmp_seq=4 ttl=50 time=122 ms
+2022-07-01 14:26:32: 
+2022-07-01 14:26:32: --- src.g03.yahoodns.net ping statistics ---
+2022-07-01 14:26:32: 4 packets transmitted, 4 received, 0% packet loss, time 3000ms
+2022-07-01 14:26:32: rtt min/avg/max/mdev = 121.780/122.122/122.386/0.218 ms
+2022-07-01 14:26:37: PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+2022-07-01 14:26:37: 64 bytes from 8.8.8.8: icmp_seq=1 ttl=58 time=41.7 ms
+2022-07-01 14:26:38: 64 bytes from 8.8.8.8: icmp_seq=2 ttl=58 time=41.3 ms
+2022-07-01 14:26:39: 64 bytes from 8.8.8.8: icmp_seq=3 ttl=58 time=41.7 ms
+2022-07-01 14:26:40: 64 bytes from 8.8.8.8: icmp_seq=4 ttl=58 time=41.3 ms
+2022-07-01 14:26:40: 
+2022-07-01 14:26:40: --- 8.8.8.8 ping statistics ---
+2022-07-01 14:26:40: 4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+2022-07-01 14:26:40: rtt min/avg/max/mdev = 41.315/41.508/41.730/0.190 ms
+2022-07-01 14:26:46: PING src.g03.yahoodns.net (74.6.136.150) 56(84) bytes of data.
+2022-07-01 14:26:46: 64 bytes from w2.src.vip.bf1.yahoo.com (74.6.136.150): icmp_seq=1 ttl=50 time=122 ms
+2022-07-01 14:26:47: 64 bytes from w2.src.vip.bf1.yahoo.com (74.6.136.150): icmp_seq=2 ttl=50 time=122 ms
+2022-07-01 14:26:48: 64 bytes from w2.src.vip.bf1.yahoo.com (74.6.136.150): icmp_seq=3 ttl=50 time=122 ms
+2022-07-01 14:26:49: 64 bytes from w2.src.vip.bf1.yahoo.com (74.6.136.150): icmp_seq=4 ttl=50 time=123 ms
+2022-07-01 14:26:49: 
+2022-07-01 14:26:49: --- src.g03.yahoodns.net ping statistics ---
+2022-07-01 14:26:49: 4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+2022-07-01 14:26:49: rtt min/avg/max/mdev = 121.714/122.131/122.987/0.505 ms
+2022-07-01 14:26:54: PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+2022-07-01 14:26:54: 64 bytes from 8.8.8.8: icmp_seq=1 ttl=58 time=41.7 ms
+2022-07-01 14:26:55: 64 bytes from 8.8.8.8: icmp_seq=2 ttl=58 time=41.4 ms
+2022-07-01 14:26:56: 64 bytes from 8.8.8.8: icmp_seq=3 ttl=58 time=41.4 ms
+2022-07-01 14:26:57: 64 bytes from 8.8.8.8: icmp_seq=4 ttl=58 time=41.6 ms
+2022-07-01 14:26:57: 
+2022-07-01 14:26:57: --- 8.8.8.8 ping statistics ---
+2022-07-01 14:26:57: 4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+2022-07-01 14:26:57: rtt min/avg/max/mdev = 41.359/41.532/41.686/0.136 ms
+2022-07-01 14:26:04: PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+2022-07-01 14:26:04: From 177.99.237.161 icmp_seq=1 Destination Host Unreachable
+2022-07-01 14:26:05: 
+2022-07-01 14:26:06: --- 8.8.8.8 ping statistics ---
+2022-07-01 14:26:07: 1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
