@@ -6,8 +6,10 @@ microsoft = '184.26.42.115'
 
 
 def ping(site):
+   
    #Abre um subprocesso ping usando a sintaxe Linux
    p = subprocess.run(['ping', '-c', '4', site], stdout=subprocess.PIPE)
+   
    #Abre um subprocesso ping usando a sintaxe Windows
    #p = subprocess.run(['ping', '/n', '4', site], stdout=subprocess.PIPE)
 
@@ -15,6 +17,7 @@ def ping(site):
 
    #Retorna o texto do terminal se hover erro retorna vazio
    return stdout.decode('UTF-8') if p.returncode == 0 else ''
+   
    #No windows 
    #return stdout.decode('ISO-8859-1') if p.returncode == 0 else ''
 
@@ -23,11 +26,13 @@ print('aguarde...')
 pings = [ping(google), ping(ptSO), ping(microsoft)]
 
 print('salvando no arquivo...')
+
 # Salva o retorno de alguns pings em um arquivo
 with open("pings.txt", "w") as arquivo:
   for p in pings: 
     arquivo.write(f'{p}\n')
 
 print('despejando no console...')
+
 #imprime a lista contento a saída no terminal de alguns pings
 for p in pings: print(f'{p}\n')
