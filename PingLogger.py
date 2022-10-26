@@ -1,6 +1,7 @@
-from inspect import _void
 import mysql.connector
 import subprocess
+import os
+import time
 
 
 
@@ -14,8 +15,9 @@ def create_server_connection(host_name, user_name, user_password, db_name): #Cri
             database=db_name
         )
         print("MySQL Database connection successful") #Retorna que a conexão foi bem sucedida
-    except Error as err:
-        print(f"Error: '{err}'")
+
+    except mysql.connector.Error as err:
+        print("Something went wrong: {}".format(err))
 
     return connection
 
@@ -24,21 +26,16 @@ def create_server_connection(host_name, user_name, user_password, db_name): #Cri
 def execute_query(connection, query): #cria consultas ao DB
     cursor = connection.cursor()
     
-    cursor.execute(query)
-    connection.commit()
-    print("Query successful")
-    print(query)
-    print("/n/n/n")
-
-
-    """
     try:
         cursor.execute(query)
         connection.commit()
         print("Query successful")
-    except Error as err:
-        print(f"Error: '{err}'")
-    """
+        print(query)
+        print("/n/n/n")
+
+    except mysql.connector.Error as err:
+        print("Something went wrong: {}".format(err))
+
 
 
 connection = create_server_connection("localhost", "python", "*aztx23*", "pinglog")
@@ -72,6 +69,29 @@ def latencia_log(index_lat_inicio, index_lat_fim): #Retorna a latencia
 
 
 
+def ping(host):
+    
+    # Option for the number of packets as a function of
+    param = '-n' if os.platform.system().lower()=='windows' else '-c'
+
+    # Building the command. Ex: "ping -c 1 google.com"
+    command = ['ping', param, '1', host]
+
+    return subprocess.call(command) == 0
+
+
+
+def concatenar_ping(ping):
+
+    ping_log = ping
+
+    datetime = time.strftime('%Y-%m-%d %H:%M:%S:', time.localtime())
+
+
+    ping_concatenado = (datetime +" "+ ping_log)
+
+    return ping_concatenado
+
 
 
 with open("ping.log") as file: #Abre o arquivo
@@ -89,7 +109,7 @@ with open("ping.log") as file: #Abre o arquivo
         
         if ((line.find('rom') > 0) and (line.find('Unreachable') < 0)):
 
-            ping_sucedido = 1
+            ping_sucedido = True
 
             inicio_latencia = line.find('time=') #Pega o index do começo da latencia
             fim_latencia = line.find("ms") #Pega o index do fim da latencia           
@@ -110,22 +130,17 @@ with open("ping.log") as file: #Abre o arquivo
 
         if ((line.find('Unreachable') > 0)):
 
-            ping_sucedido = 0
-
+            ping_sucedido = False
 
             data_log_text = str(data_log(fim_data))
 
             endereco_log_text = str(endereco_log(inicio_endereco, fim_endenreco))
 
-            latencia_log_text = str(999999)
+            latencia_log_text = str("")
 
             ping_sucedido_text = str(ping_sucedido)
 
             salvar_ping = "INSERT INTO log (log_data,endereco,pingvalue,pingsucedido) VALUES ('" + data_log_text + "','" + endereco_log_text + "'," + latencia_log_text + ",'" + ping_sucedido_text + "');"
 
             execute_query(connection, salvar_ping)
-
-
-
-
 
